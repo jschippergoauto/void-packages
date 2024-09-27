@@ -1,0 +1,24 @@
+# Template file for 'tabbed-flexipatch'
+pkgname=tabbed-flexipatch
+version=0.8
+revision=20240926
+_commit=f9b93088813e917b0d406bdbf3744be7ebdcb3d9
+build_style=gnu-makefile
+hostmakedepends="freetype-devel"
+makedepends="libX11-devel libXft-devel"
+short_desc="Tab interface for application supporting Xembed"
+maintainer="nobody <nobody@localhost>"
+license="MIT"
+homepage="http://tools.suckless.org/tabbed/"
+distfiles="https://github.com/bakkeby/tabbed-flexipatch/archive/${_commit}.tar.gz"
+checksum=0575620cf70f263c28d73af28cdc7337322484f557b7d430efea13c7287453cf
+
+pre_build() {
+	vsed -i 's|X11R6/||g' Makefile
+	[ -e ${FILESDIR}/config.h ] && cp ${FILESDIR}/config.h config.h
+	[ -e ${FILESDIR}/patches.h ] && cp ${FILESDIR}/patches.h patches.h
+}
+
+post_install() {
+	vlicense LICENSE
+}
