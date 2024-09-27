@@ -1,0 +1,17 @@
+# Template file for 'justopen'
+pkgname=justopen
+version=0.20240926
+revision=1
+_commit=e73ac38acf1e997f62e7e719c98b94ed61413b6c
+build_style=go
+go_import_path=github.com/heavyjoost/justopen
+short_desc="Just opens the **** location."
+maintainer="nobody <nobody@localhost>"
+license="Unlicense"
+homepage="https://github.com/heavyjoost/justopen"
+distfiles="https://github.com/heavyjoost/justopen/archive/${_commit}.tar.gz"
+checksum=1a1dbd4eb753a75a4d436898d4b5521919a8b979728a5d14d138fd5c5e4f6827
+
+post_install() {
+	vlicense LICENSE
+}
