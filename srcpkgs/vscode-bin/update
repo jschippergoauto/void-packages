@@ -1,0 +1,2 @@
+homepage="https://code.visualstudio.com/updates"
+pattern="Update \K\d+\.\d+(\.\d+)?(?=\D.*)"
