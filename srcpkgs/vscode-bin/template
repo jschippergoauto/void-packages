@@ -1,6 +1,6 @@
 pkgname=vscode-bin
 version=1.94.1
-revision=2
+revision=3
 archs="x86_64"
 create_wrksrc=yes
 depends="libXtst ncurses nss xdg-utils ripgrep electron24"
@@ -9,7 +9,7 @@ maintainer="nobody <nobody@localhost>"
 license="custom:Proprietary"
 homepage="https://code.visualstudio.com/"
 distfiles="https://update.code.visualstudio.com/${version}/linux-rpm-x64/stable>vscode-${version}.rpm"
-checksum=fa47c256ddc827f75d080d0f92269091a4a1ca18c05d51a09a8d04ee41a3cacd
+checksum=da61aec9d36fb92e1eef71ee1a9bd4ce9d47799e6a6f1e902bf427c4267f0368
 # repository="nonfree"
 nostrip=yes
 
