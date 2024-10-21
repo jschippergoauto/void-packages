@@ -1,0 +1,17 @@
+pkgname=ecs-cli
+version=1.21.0
+revision=2
+archs="x86_64"
+short_desc="Amazon ECS CLI"
+maintainer="nobody <nobody@localhost>"
+license="custom:Proprietary"
+homepage="https://github.com/aws/amazon-ecs-cli"
+build_style=fetch
+distfiles="https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest"
+skip_extraction=ecs-cli-linux-amd64-latest
+checksum=b041f0862ad4d84630b4145e82222f378cabed52ad9b2edeeb1c798193a4b98d
+# repository="nonfree"
+
+do_install() {
+	vinstall ecs-cli-linux-amd64-latest 755 usr/bin ecs-cli
+}
