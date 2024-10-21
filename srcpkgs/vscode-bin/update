@@ -1,2 +1,1 @@
-homepage="https://code.visualstudio.com/updates"
-pattern="Update \K\d+\.\d+(\.\d+)?(?=\D.*)"
+homepage="https://github.com/microsoft/vscode/tags"
