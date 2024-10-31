@@ -1,0 +1,19 @@
+# Template file for 'zfsnap'
+pkgname=zfsnap
+version=2.0.0beta3
+revision=4
+short_desc="A portable, performant scripts to make rolling ZFS snapshots easy."
+maintainer="nobody <nobody@localhost>"
+license="BSD-3-Clause"
+homepage="https://www.zfsnap.org"
+_hyphenated_pkgver="$(echo "${version}" | sed -r 's/([0-9])([a-z])/\1-\2/')"
+distfiles="https://github.com/zfsnap/zfsnap/archive/v${_hyphenated_pkgver}.tar.gz"
+checksum=d73be34b58d94b89010e2be6fc3d34bdc34b9675aaa2bebfe446dffb683e45d3
+
+do_install() {
+	vman man/man8/zfsnap.8
+	vcopy share/zfsnap usr/share/
+	vbin sbin/zfsnap.sh zfsnap
+	vcompletion completion/zfsnap-completion.bash bash
+	vcompletion completion/zfsnap-completion.zsh zsh
+}
