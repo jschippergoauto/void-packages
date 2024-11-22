@@ -1,5 +1,5 @@
 pkgname=vscode-bin
-version=1.94.2
+version=1.95.3
 revision=1
 archs="x86_64"
 create_wrksrc=yes
@@ -9,7 +9,7 @@ maintainer="nobody <nobody@localhost>"
 license="custom:Proprietary"
 homepage="https://code.visualstudio.com/"
 distfiles="https://update.code.visualstudio.com/${version}/linux-rpm-x64/stable>vscode-${version}.rpm"
-checksum=a8e59ab866989b7ca70d537c10a63578b3aa5d530d475e0f7714dff80e08069d
+checksum=867204e0ad2126d1d19f842bcffc26225d1de40d5a86a716781b4f98bca2296f
 # repository="nonfree"
 nostrip=yes
 
