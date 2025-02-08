@@ -1,8 +1,8 @@
 # Template file for 'st-flexipatch'
 pkgname=st-flexipatch
 version=0.9.2
-revision=5
-_commit=aaaa59eb77be7eaaa05d6474ed0730e342a24b51
+revision=7
+_commit=b77fb11b7664b82cefcaaa21a7f4b0faa48775b0
 build_style=gnu-makefile
 make_use_env=compliant
 hostmakedepends="pkg-config"
@@ -13,7 +13,7 @@ maintainer="nobody <nobody@localhost>"
 license="MIT"
 homepage="https://st.suckless.org"
 distfiles="https://github.com/bakkeby/st-flexipatch/archive/${_commit}.tar.gz"
-checksum=fd9a2c0c42dbf9a87395def5a6697a5441993463b8dfe783e88e5f2a765d6764
+checksum=0411a40438ac6a62bf9db34e7326b99814f7f3b494a4fe6b17bcfc83fda3a3b5
 
 pre_build() {
 	[ -e ${FILESDIR}/config.h ] && cp ${FILESDIR}/config.h config.h
